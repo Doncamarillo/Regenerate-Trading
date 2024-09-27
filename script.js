@@ -27,6 +27,8 @@ const getFinnhub = async (tickerSymbol) => {
     let priceOpen =stockData.o
     let lastClose = stockData.pc
 
+    changeBackground(changePercent)
+
     stockPrice.textContent = `${priceQuote}`
     priceChange.textContent = `${changePrice}`
     percentChange.textContent =`${changePercent}`
@@ -35,6 +37,16 @@ const getFinnhub = async (tickerSymbol) => {
     openPrice.textContent =`${priceOpen}`
     yesterdayClose.textContent =`${lastClose}`
 
+}
+
+const changeBackground = (changePercent) => {
+    if (changePercent > 0) {
+        document.body.style.backgroundImage = "url('greenDay.jpg')";
+    
+    } else {
+        document.body.style.backgroundImage = "url('redDay.avif')";
+
+    }
 }
 
 button.addEventListener('click', () => {
