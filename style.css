@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(166, 219, 233);
+    background-size: cover;
+    background-repeat: repeat;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 13px;
+    font-size: 50px;
+    font-weight: 25;
+    
+}
+
+h2{
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight:25;
+    padding-top:-2%
+}
+

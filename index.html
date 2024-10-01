@@ -7,8 +7,12 @@
     <title>Regenerate Trader</title>
     <script defer src="script.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <audio id ="sadBob" href="sadBob.mp3"></audio>
+    <audio id ="bigBank" href="bigBank.mp3"></audio>
     <header>
-        <h1>Regenerate Trading</h1>
+        <h1 id="refresh" style="cursor:pointer">Regenerate Trading</h1>
+        <h2>So we don't have to pretend to know</h2>
     </header>
 </head>
 
@@ -16,7 +20,7 @@
 
     <div class="searchBar">
         <input id="tickerSymbol" type="text" placeholder="Enter Ticker Symbol" />
-        <button id="submitButton"></button>
+        <button id="submitButton" style = "cursor: pointer"></button>
     </div>
     <img id="chartImg" >
     <div class="stockData">
