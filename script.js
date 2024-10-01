@@ -11,11 +11,7 @@ const dailyHigh = document.querySelector('#dailyHigh');
 const dailyLow = document.querySelector('#openPrice');
 const openPrice = document.querySelector('#openPrice');
 const yesterdayClose = document.querySelector('#yesterdayClose');
-
-
-
-
-
+const marketData = document.querySelector('marketData')
 
 const getFinnhub = async (tickerSymbol) => {
 
@@ -31,16 +27,16 @@ const getFinnhub = async (tickerSymbol) => {
     let priceOpen =stockData.o
     let lastClose = stockData.pc
 
+
     changeBackground(changePercent)
 
-
-    stockPrice.textContent = `${priceQuote}`
-    priceChange.textContent = `${changePrice}`
-    percentChange.textContent =`${changePercent}`
-    dailyHigh.textContent =`${high}`
-    dailyLow.textContent =`${low}`
-    openPrice.textContent =`${priceOpen}`
-    yesterdayClose.textContent =`${lastClose}`
+    stockPrice.textContent = `Currently Trading at: $ ${priceQuote}`
+    priceChange.textContent = `Change since last close: $${changePrice}`
+    percentChange.textContent =`Percent Change since last close: ${changePercent} %`
+    dailyHigh.textContent =`Daily high: $${high}`
+    dailyLow.textContent =`Daily Low: ${low}`
+    openPrice.textContent =`Price at Open: $ ${priceOpen}`
+    yesterdayClose.textContent =`Last Close: $ ${lastClose}`
 
 }
 

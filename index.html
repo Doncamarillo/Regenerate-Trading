@@ -8,8 +8,8 @@
     <script defer src="script.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <audio id ="sadBob" href="sadBob.mp3"></audio>
-    <audio id ="bigBank" href="bigBank.mp3"></audio>
+    <audio id="sadBob" href="sadBob.mp3"></audio>
+    <audio id="bigBank" href="bigBank.mp3"></audio>
     <header>
         <h1 id="refresh" style="cursor:pointer">Regenerate Trading</h1>
         <h2>So we don't have to pretend to know</h2>
@@ -20,10 +20,11 @@
 
     <div class="searchBar">
         <input id="tickerSymbol" type="text" placeholder="Enter Ticker Symbol" />
-        <button id="submitButton" style = "cursor: pointer"></button>
+        <button id="submitButton" style="cursor: pointer"></button>
     </div>
-    <img id="chartImg" >
+    <img id="chartImg">
     <div class="stockData">
+        <h4 id="marketData"> Market Data </h4>
         <p id="currentPrice"></p>
         <p id="change"></p>
         <p id="percentChange"></p>
@@ -32,6 +33,27 @@
         <p id="openPrice"></p>
         <p id="yesterdayClose"></p>
     </div>
+
+
+
+
+
+
+
+
+    <div class="footerlinks">
+        <a id="robinhoodLink" href="https://www.robinhood.com/us/en/">
+            <img src="https://149461578.v2.pressablecdn.com/wp-content/uploads/2021/04/robinhood-logo-no-text-png-1.png"
+                alt="Robinhood Logo" style="width:150px; height:150px;">
+        </a>
+        <a id="webullLink" href="https://www.webull.com/">
+            <img src ="https://static.cdnlogo.com/logos/w/81/webull.png" 
+            alt="webull Logo" style="width:150px;height:150px;">   
+        </a>
+        <a id="tosLink" href="https://trade.thinkorswim.com/">
+            <img src ="https://spng.pngfind.com/pngs/s/89-893001_a-special-offer-from-td-ameritrade-thinkorswim-logo.png"
+            alt= "tos Logo" style="width:150px;height:150px"></a>
+
 
 </body>
 
