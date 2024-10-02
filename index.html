@@ -11,16 +11,19 @@
     <audio id="sadBob" href="sadBob.mp3"></audio>
     <audio id="bigBank" href="bigBank.mp3"></audio>
     <header>
-        <h1 id="refresh" style="cursor:pointer">Regenerate Trading</h1>
-        <h2>So we don't have to pretend to know</h2>
+        <div class="header-container">
+            <h1 id="refresh" style="cursor:pointer">Regenerate Trading</h1>
+            <h2>So we don't have to pretend to know</h2>
+        </div>
     </header>
 </head>
 
 <body>
 
     <div class="searchBar">
-        <input id="tickerSymbol" type="text" placeholder="Enter Ticker Symbol" />
-        <button id="submitButton" style="cursor: pointer"></button>
+        <input id="tickerSymbol" type="text" style="padding-left: 20px; width:200px;height:30px; border-radius:5%;"
+            placeholder="Enter Ticker Symbol" />
+        <button id="submitButton" style="cursor: pointer ;width:50px; height:35px;"></button>
     </div>
     <img id="chartImg">
     <div class="stockData">
@@ -35,24 +38,28 @@
     </div>
 
 
-
-
-
-
-
-
     <div class="footerlinks">
+        <a id="tradingView" href="https://www.tradingview.com/"></a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9V9h5YCcKjkc1d4WQkhM-ni_nNtz--5XD-QE2Yl1T7zGazl7ErliKZX9WmR_-1ppJLyM&usqp=CAU"
+            alt="tradingView" style="width:70px; height: 70px"></a>
         <a id="robinhoodLink" href="https://www.robinhood.com/us/en/">
             <img src="https://149461578.v2.pressablecdn.com/wp-content/uploads/2021/04/robinhood-logo-no-text-png-1.png"
-                alt="Robinhood Logo" style="width:150px; height:150px;">
+                alt="Robinhood Logo" style="width:70px; height:70px;">
         </a>
         <a id="webullLink" href="https://www.webull.com/">
-            <img src ="https://static.cdnlogo.com/logos/w/81/webull.png" 
-            alt="webull Logo" style="width:150px;height:150px;">   
+            <img src="https://static.cdnlogo.com/logos/w/81/webull.png" alt="webull Logo"
+                style="width:70px;height:70px;">
         </a>
         <a id="tosLink" href="https://trade.thinkorswim.com/">
-            <img src ="https://spng.pngfind.com/pngs/s/89-893001_a-special-offer-from-td-ameritrade-thinkorswim-logo.png"
-            alt= "tos Logo" style="width:150px;height:150px"></a>
+            <img src="https://pbs.twimg.com/profile_images/1716438690942046208/jL07vmjF_400x400.jpg" alt="tos Logo"
+                style="width:70px;height:70px"></a>
+
+        <a id="eTrade" href="https://us.etrade.com/home">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1sNbOIxkiOY3SY26HoeISonmEv1wO7BYHEQ&s"
+                alt="eTrade" style="width:70px; height: 70px">
+        </a>
+    </div>
+
 
 
 </body>

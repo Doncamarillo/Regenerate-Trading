@@ -29,11 +29,11 @@ const getFinnhub = async (tickerSymbol) => {
 
 
     changeBackground(changePercent)
-
-    stockPrice.textContent = `Currently Trading at: $ ${priceQuote}`
-    priceChange.textContent = `Change since last close: $${changePrice}`
-    percentChange.textContent =`Percent Change since last close: ${changePercent} %`
-    dailyHigh.textContent =`Daily high: $${high}`
+    
+    stockPrice.textContent = `$${tickerSymbol} Currently Trading at: $ ${priceQuote}`
+    priceChange.textContent = `Change Since Last Close: $ ${changePrice}`
+    percentChange.textContent =`Percent Change Since Last Close: ${changePercent} %`
+    dailyHigh.textContent =`Daily High: $${high}`
     dailyLow.textContent =`Daily Low: ${low}`
     openPrice.textContent =`Price at Open: $ ${priceOpen}`
     yesterdayClose.textContent =`Last Close: $ ${lastClose}`
@@ -58,7 +58,7 @@ const changeBackground = (changePercent) => {
       
     
     } else {
-        document.body.style.backgroundImage = "url('redDay.avif')";
+        document.body.style.backgroundImage = "url('https://www.shutterstock.com/shutterstock/videos/3481348021/thumb/8.jpg?ip=x480')";
         playAudio('sadBob')
 
 
