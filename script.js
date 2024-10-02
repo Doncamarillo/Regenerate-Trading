@@ -1,7 +1,7 @@
 const apiKey = 'crrd0h9r01qmgcu5vq40crrd0h9r01qmgcu5vq4g';
 
 const tickerSymbol = document.querySelector('#tickerSymbol');
-const button = document.querySelector('#submitButton');
+
 
 
 const stockPrice = document.querySelector('#currentPrice');
@@ -69,10 +69,11 @@ tickerSymbol.addEventListener('input',() =>{
     tickerSymbol.value = tickerSymbol.value.toUpperCase();
 })
 
-button.addEventListener('click', () => {
+tickerSymbol.addEventListener('keydown', (event) => {
+    if (event.key === "Enter"){
     const ticker = tickerSymbol.value.trim(); 
     getFinnhub(ticker);
-
+    }
 
     const refresh = document.querySelector('#refresh')
 

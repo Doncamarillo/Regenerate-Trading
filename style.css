@@ -41,7 +41,8 @@ h2 {
 
 p {
     display: flex;
-    flex: auto;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: 30px;
     font-size: 20px;
     text-align: left;
@@ -66,11 +67,24 @@ h4 {
     align-items: center;
     gap: 100px;
     padding-right: 60px;
+    margin-top: 300px;
 
 }
 
-.searchBar {
+#searchBar {
 
     padding-left:20px;
 
+}
+
+h6 {
+    font-size: 15px;
+    opacity: 50%;
+}
+
+.userFunctions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
