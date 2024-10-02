@@ -65,6 +65,10 @@ const changeBackground = (changePercent) => {
     }
 }
 
+tickerSymbol.addEventListener('input',() =>{
+    tickerSymbol.value = tickerSymbol.value.toUpperCase();
+})
+
 button.addEventListener('click', () => {
     const ticker = tickerSymbol.value.trim(); 
     getFinnhub(ticker);
