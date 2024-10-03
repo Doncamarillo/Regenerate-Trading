@@ -68,13 +68,6 @@ h4 {
     gap: 100px;
     padding-right: 60px;
     margin-top: 300px;
-
-}
-
-#searchBar {
-
-    padding-left:20px;
-
 }
 
 h6 {
@@ -83,6 +76,9 @@ h6 {
 }
 
 .userFunctions {
+    position: fixed;
+    top: 400px;
+    right: 1050px;
     display: flex;
     flex-direction: column;
     justify-content: center;
