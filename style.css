@@ -83,3 +83,16 @@ h6 {
     margin:1em;
 
 }
+
+.adSpace {
+    display: grid;
+    grid-column: 1fr auto;
+}
+
+#untitledAd img {
+
+    width: 100%;
+    height: 6rem;
+
+    
+}
