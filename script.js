@@ -13,6 +13,7 @@ const openPrice = document.querySelector('#openPrice');
 const yesterdayClose = document.querySelector('#yesterdayClose');
 const marketData = document.querySelector('marketData')
 
+
 const getFinnhub = async (tickerSymbol) => {
 
     const response = await axios.get(`https://finnhub.io/api/v1/quote?symbol=${tickerSymbol}&token=crrd0h9r01qmgcu5vq40crrd0h9r01qmgcu5vq4g`);
@@ -73,6 +74,7 @@ tickerSymbol.addEventListener('keydown', (event) => {
     if (event.key === "Enter"){
     const ticker = tickerSymbol.value.trim(); 
     getFinnhub(ticker);
+    
     }
 
     const refresh = document.querySelector('#refresh')

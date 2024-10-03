@@ -1,50 +1,52 @@
-.header-container h1 {
-    border-top: .2em double;
-    border-bottom: .2em double;
-    border-radius: 100%;
-    margin-top: 10px;
-    text-align: center;
-}
-
 body {
     display:grid;
     align-items: center;
     background-color: rgb(166, 219, 233);
     background-size: cover;
-    background-repeat: repeat;
-    min-height: 100vh;
-    border-bottom-width: 100em solid grey;
+    background-repeat: no-repeat;
     margin: 0;
 
 }
 
-
 h1 {
-    margin: 0;
-    letter-spacing: 13px;
-    font-size: 50px;
-    font-weight: 25;
+    font-size: 2em;
+    border-top: .2em double;
+    border-bottom: .2em double;
+    border-radius: 100%;
+    margin-top: 10px;
     text-align: center;
-    padding-left: 50px;
-
+    letter-spacing: .5em;
+    font-weight: 25;
+    
 }
 
 h2 {
     font-family: fantasy;
     margin: 0;
     text-align: center;
-    letter-spacing: 3px;
-    font-weight: 9;
-    margin-top: 10px;
-    padding-left: 20px;
+    letter-spacing: .1em;
+    font-weight: 15;
+    margin-top: .6em;
 }
 
-p {
+.searchBar {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+
+
+.stockData {
+    
+
+    top:20px;
+    left:20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 30px;
-    font-size: 20px;
+    margin: 1.5em;
+    font-size: 1.25em;
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 10;
@@ -52,11 +54,10 @@ p {
 
 h4 {
     margin: 0;
-    font-size: 30px;
+    font-size: 1.875em;
     text-align: left;
-    padding-left: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 10;
+    font-weight: 25;
     text-decoration: underline;
 }
 
@@ -65,9 +66,8 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    padding-right: 60px;
-    margin-top: 300px;
+    gap: 2.5em;
+    padding: 1rem 0;
 }
 
 h6 {
@@ -76,11 +76,10 @@ h6 {
 }
 
 .userFunctions {
-    position: fixed;
-    top: 400px;
-    right: 1050px;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    gap: 1.25em;
+    margin:1em;
+
 }
