@@ -11,8 +11,15 @@ treating the market as a casino but also seasoned veterns in the market that wan
 ## Functionality
 
 Finnhub api will extract data that will help traders identify key statistics in a stock they want to play. As it is a free API, it doesn't allow to pull
-actual charts but it will display the name of the stock, the ticker symbol, last close, the open price, high of day, low of day, and daily volume.
+actual charts but it will display the name of the stock, the ticker symbol, last close, the open price, high of day, and low of day.
 Regenerate trading will include add texts boxes for traders to add their personal predetermined stop losses, take profit price, and a target for entry price.
-In addition, once a button is clicked, two more text boxes will reveal showing allowing the user to log profit loss and additional notes they want to add to the 
-trade to refer to and learn for trades in the future. Also included in the website will be links to 3 trading platforms for the user to execute their trades.
+
+Added links on the bottom for online broker platforms to execute trades with added designated ad space below those links on the page footer
+
+Clicking the header will also reset the page to its initial state 
+
+
+## Sample Stock Image in Regenerate Trading
+
+![webImage](regenerateTradingScreenshot.jpg)
 
