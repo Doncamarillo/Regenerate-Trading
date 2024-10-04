@@ -28,8 +28,8 @@ const getFinnhub = async (tickerSymbol) => {
     let priceOpen =stockData.o
     let lastClose = stockData.pc
 
-
-    changeBackground(changePercent)
+   
+  
     
     stockPrice.textContent = `$${tickerSymbol} Currently Trading at: $ ${priceQuote}`
     priceChange.textContent = `Change Since Last Close: $ ${changePrice}`
@@ -38,6 +38,8 @@ const getFinnhub = async (tickerSymbol) => {
     dailyLow.textContent =`Daily Low: ${low}`
     openPrice.textContent =`Price at Open: $ ${priceOpen}`
     yesterdayClose.textContent =`Last Close: $ ${lastClose}`
+
+    changeBackground(changePercent)
 
 }
 
@@ -59,7 +61,7 @@ const changeBackground = (changePercent) => {
       
     
     } else {
-        document.body.style.backgroundImage = "url('https://www.shutterstock.com/shutterstock/videos/3481348021/thumb/8.jpg?ip=x480')";
+        document.body.style.backgroundImage = "url('https://static.vecteezy.com/system/resources/previews/006/638/905/non_2x/economic-critical-crisis-concept-a-low-polygon-with-a-wireframe-of-the-lower-arrow-and-shiny-red-background-recession-financial-cryptocurrency-gold-and-the-stock-market-losing-money-and-cash-vector.jpg')";
         playAudio('sadBob')
 
 
